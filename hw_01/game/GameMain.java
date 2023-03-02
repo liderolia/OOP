@@ -52,7 +52,7 @@ public class GameMain {
     RobotMap.Robot robot3 = map2.createRobot(new Point(0, 3));
     RobotMap.Robot robot4 = map2.createRobot(new Point(1, 1));
     RobotMap.Robot robot5 = map2.createRobot(new Point(1, 2));
-    RobotMap.Robot robot6 = map2.createRobot(new Point(1, 3));
+  
   }
 }
 
