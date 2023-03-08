@@ -48,7 +48,7 @@ public class Main {
                 list.sort(Comparator.comparingDouble(Notebook::getPrice));
                 System.out.println("\nСортировка по цене: ");
                 for (Notebook n : list) {
-                    System.out.println(n.getPrice() + " " + n.getRam());
+                    System.out.println("цена: " + n.getPrice() + "\tпамять: " + n.getRam());
                 }
                 boolean YesNoStart = true;
                 while (YesNoStart) {                     
@@ -74,7 +74,7 @@ public class Main {
                 list.sort(Comparator.comparingInt(Notebook::getRam));
                 System.out.println("\nСортировка по памяти: ");
                 for (Notebook n : list) {
-                    System.out.println(n.getPrice() + " " + n.getRam());
+                    System.out.println("цена: " + n.getPrice() + "\tпамять: " + n.getRam());
                 }
                 
                 boolean YesNoStart = true;
@@ -102,7 +102,7 @@ public class Main {
                 list.sort(Comparator.comparingInt(Notebook::getRam).thenComparing(Notebook::getPrice));
                 System.out.println("\nСортировка сначала по памяти, потом по цене: ");
                 for (Notebook n : list) {
-                    System.out.println(n.getPrice() + " " + n.getRam());
+                    System.out.println("цена: " + n.getPrice() + "\tпамять: " + n.getRam());
                 }
                 
                 boolean YesNoStart = true;
@@ -132,7 +132,6 @@ public class Main {
 
             else{
                 System.out.println("Введено некорректное значение!");                
-                System.out.print("Введите значение: ");  
                 continue;     
             }
         }
