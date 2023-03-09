@@ -1,6 +1,6 @@
 package hw_03;
 
-public class Notebook implements Comparable<Notebook> {
+public class Notebook {
     double price;
     int ram;
 
