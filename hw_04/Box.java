@@ -13,15 +13,15 @@ public class Box<T extends Fruit> {
 
     public double getWeight() {
         double weight = 0;
-        for (T fr : fruits) {
-            weight += fr.getWeight();
+        for (T fruit : fruits) {
+            weight += fruit.getWeight();
         }
         return weight;
     }
 
     public void moveTo(Box<? super T> anotherBox) {
-        for (T fr : fruits) {
-            anotherBox.add(fr);
+        for (T fruit : fruits) {
+            anotherBox.add(fruit);
         }
         fruits = new ArrayList<T>();
     }
